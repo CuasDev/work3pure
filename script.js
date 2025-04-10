@@ -72,6 +72,7 @@ if(form) {
         const nombre = document.getElementById('nombre').value.trim();
         const email = document.getElementById('email').value.trim();
         const telefono = document.getElementById('telefono').value.trim();
+        const plan = document.getElementById('plan').value.trim();
         const mensaje = document.getElementById('mensaje').value.trim();
         
         let isValid = true;
@@ -108,6 +109,15 @@ if(form) {
             // Simular envío exitoso
             this.reset();
             mostrarExito('¡Mensaje enviado con éxito! Me pondré en contacto contigo pronto.');
+            
+            // Para propósitos de depuración, mostrar los datos que se enviarían
+            console.log({
+                nombre,
+                email,
+                telefono,
+                plan,
+                mensaje
+            });
         }
     });
 }

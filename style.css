@@ -602,7 +602,8 @@ h2::after {
 }
 
 .campo input,
-.campo textarea {
+.campo textarea,
+.campo select {
     width: 100%;
     padding: 0.8rem;
     border: 1px solid var(--glass-border);
@@ -613,7 +614,8 @@ h2::after {
 }
 
 .campo input:focus,
-.campo textarea:focus {
+.campo textarea:focus,
+.campo select:focus {
     outline: none;
     border-color: var(--color-secundario);
     box-shadow: var(--neon-sombra);
