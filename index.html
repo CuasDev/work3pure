@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Darwin Osorio - Desarrollador Web</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="firebase-styles.css">
+    <link rel="stylesheet" href="fab.css">
 </head>
 <body>
     <header class="header">
@@ -13,6 +15,8 @@
             <ul class="nav-links">
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="proceso-trabajo.html">Proceso</a></li>
+                <li><a href="sobre-mi.html">Sobre Mí</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
             <div class="nav-controls">
@@ -197,7 +201,7 @@
                             <li>Pruebas básicas y despliegue inicial</li>
                         </ul>
                         <div class="valor-destacado">Tecnologías modernas y escalables para tu proyecto</div>
-                        <div class="precio">Desde Q39,000</div>
+                        <div class="precio">Desde Q15,000</div>
                     </article>
                     <article class="servicio">
                         <h3>Blog - Básico</h3>
@@ -370,6 +374,12 @@
         </section>
     </main>
 
+    <!-- Botón de acción flotante para contacto rápido -->
+    <a href="#contacto" class="fab" aria-label="Contactar">
+        <span class="fab-icon">💬</span>
+        <span class="fab-tooltip">Contáctame</span>
+    </a>
+
     <footer class="footer">
         <div class="contenedor">
             <div class="footer-grid">
@@ -390,6 +400,10 @@
                     <ul class="footer-links">
                         <li><a href="#servicios">Servicios</a></li>
                         <li><a href="#portafolio">Portafolio</a></li>
+                        <li><a href="proceso-trabajo.html">Proceso</a></li>
+                        <li><a href="sobre-mi.html">Sobre Mí</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="blog.html">Blog</a></li>
                         <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </div>
@@ -409,6 +423,14 @@
         </div>
     </footer>
 
+    <!-- Firebase Scripts -->
+    <script type="module">
+        // Importar Firebase solo cuando se necesite
+        document.addEventListener('DOMContentLoaded', () => {
+            // Los módulos de Firebase se cargarán bajo demanda cuando se envíe el formulario
+            console.log('Firebase se cargará cuando sea necesario');
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 </html>

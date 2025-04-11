@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es-GT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración de Mensajes - Darwin Osorio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="firebase-styles.css">
+    <style>
+        .mensajes-container {
+            margin-top: 2rem;
+        }
+        .mensaje-card {
+            background-color: var(--color-fondo-alt);
+            border-radius: var(--borde-radio);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .mensaje-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--color-borde);
+            padding-bottom: 0.5rem;
+        }
+        .mensaje-fecha {
+            font-size: 0.9rem;
+            color: var(--color-texto-claro);
+        }
+        .mensaje-info {
+            margin-bottom: 1rem;
+        }
+        .mensaje-info p {
+            margin: 0.5rem 0;
+        }
+        .mensaje-contenido {
+            background-color: var(--color-fondo);
+            padding: 1rem;
+            border-radius: var(--borde-radio);
+            border: 1px solid var(--color-borde);
+        }
+        .mensaje-plan {
+            display: inline-block;
+            background-color: var(--color-primario-claro);
+            color: var(--color-primario-oscuro);
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+        .cargando {
+            text-align: center;
+            padding: 2rem;
+        }
+        .error-container {
+            background-color: rgba(239, 68, 68, 0.1);
+            color: #b91c1c;
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            border-radius: var(--borde-radio);
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .sin-mensajes {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--color-fondo-alt);
+            border-radius: var(--borde-radio);
+        }
+        [data-theme="dark"] .error-container {
+            background-color: rgba(239, 68, 68, 0.2);
+            color: #f87171;
+            border-color: rgba(239, 68, 68, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="logo">Darwin Osorio</a>
+            <ul class="nav-links">
+                <li><a href="index.html#servicios">Servicios</a></li>
+                <li><a href="index.html#portafolio">Portafolio</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+            <div class="nav-controls">
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" />
+                        <div class="slider">
+                            <span class="icon sun-icon">☀️</span>
+                            <span class="icon moon-icon">🌙</span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="seccion">
+            <div class="contenedor">
+                <h1>Administración de Mensajes</h1>
+                <p>Aquí puedes ver todos los mensajes enviados a través del formulario de contacto.</p>
+                
+                <div id="error-container" class="error-container" style="display: none;">
+                    <p id="error-message">Error al cargar los mensajes.</p>
+                </div>
+                
+                <div id="cargando" class="cargando">
+                    <p>Cargando mensajes...</p>
+                </div>
+                
+                <div id="mensajes-container" class="mensajes-container" style="display: none;">
+                    <!-- Los mensajes se cargarán aquí dinámicamente -->
+                </div>
+                
+                <div id="sin-mensajes" class="sin-mensajes" style="display: none;">
+                    <p>No hay mensajes disponibles.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="footer-bottom">
+                <p>&copy; 2023 Darwin Osorio. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Firebase Scripts -->
+    <script type="module" src="admin-mensajes.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

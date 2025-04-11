@@ -1,0 +1,122 @@
+/* Estilos para el Botón de Acción Flotante (FAB) de Material Design */
+
+.fab {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--color-secundario);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+}
+
+.fab:hover, .fab:focus {
+    background: var(--color-accento);
+    box-shadow: 0 5px 11px -2px rgba(0,0,0,.2), 0 8px 16px 0 rgba(0,0,0,.14), 0 4px 22px 0 rgba(0,0,0,.12);
+    transform: translateY(-2px);
+}
+
+.fab-icon {
+    font-size: 28px;
+    line-height: 1;
+    animation: pulse 2s infinite;
+}
+
+/* Tooltip para el FAB */
+.fab-tooltip {
+    position: absolute;
+    right: 64px;
+    background: var(--color-primario);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    opacity: 0;
+    transform: translateX(10px);
+    transition: all 0.3s ease;
+    pointer-events: none;
+    white-space: nowrap;
+    border: none;
+}
+
+.fab:hover .fab-tooltip {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Animación de pulso para el icono */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Estilos para el tema oscuro */
+[data-theme="dark"] .fab {
+    background: var(--color-secundario);
+}
+
+[data-theme="dark"] .fab:hover, [data-theme="dark"] .fab:focus {
+    background: var(--color-accento);
+}
+
+/* Animación de pulsación para llamar la atención */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(59, 130, 246, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+    }
+}
+
+.fab-pulse {
+    animation: pulse 2s infinite;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .fab {
+        bottom: 1.5rem;
+        right: 1.5rem;
+    }
+    
+    .fab-tooltip {
+        position: absolute;
+        right: 64px;
+        background: var(--color-primario);
+        color: white;
+        padding: 0.4rem 0.8rem;
+        border-radius: 4px;
+        font-size: 0.8rem;
+        opacity: 0;
+        transform: translateX(10px);
+        white-space: nowrap;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+    
+    .fab:hover .fab-tooltip {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

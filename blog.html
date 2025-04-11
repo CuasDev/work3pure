@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es-GT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Darwin Osorio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="firebase-styles.css">
+    <link rel="stylesheet" href="fab.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="logo">Darwin Osorio</a>
+            <ul class="nav-links">
+                <li><a href="index.html#servicios">Servicios</a></li>
+                <li><a href="index.html#portafolio">Portafolio</a></li>
+                <li><a href="proceso-trabajo.html">Proceso</a></li>
+                <li><a href="sobre-mi.html">Sobre Mí</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+            <div class="nav-controls">
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" />
+                        <div class="slider">
+                            <span class="icon sun-icon">☀️</span>
+                            <span class="icon moon-icon">🌙</span>
+                        </div>
+                    </label>
+                </div>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="pagina-header blog-header">
+            <div class="contenedor">
+                <h1>Blog</h1>
+                <p class="subtitulo">Artículos, consejos y tendencias sobre desarrollo web</p>
+            </div>
+        </section>
+
+        <section class="seccion blog-contenido">
+            <div class="contenedor">
+                <div class="blog-grid">
+                    <div class="blog-principal">
+                        <article class="articulo destacado">
+                            <div class="articulo-imagen">
+                                <div class="imagen-placeholder">
+                                    <!-- Aquí iría la imagen del artículo destacado -->
+                                </div>
+                                <span class="etiqueta">Tendencias</span>
+                            </div>
+                            <div class="articulo-contenido">
+                                <h2>Las Tendencias de Diseño Web que Dominarán 2023</h2>
+                                <div class="articulo-meta">
+                                    <span class="fecha">15 de octubre, 2023</span>
+                                    <span class="tiempo-lectura">8 min de lectura</span>
+                                </div>
+                                <p class="articulo-extracto">Descubre las tendencias de diseño web más importantes que están definiendo la experiencia digital este año, desde diseños minimalistas hasta experiencias inmersivas con realidad aumentada.</p>
+                                <a href="#" class="btn btn-secundario">Leer artículo completo</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="blog-lista">
+                        <article class="articulo">
+                            <div class="articulo-imagen">
+                                <div class="imagen-placeholder">
+                                    <!-- Aquí iría la imagen del artículo -->
+                                </div>
+                                <span class="etiqueta">Desarrollo</span>
+                            </div>
+                            <div class="articulo-contenido">
+                                <h3>Cómo Optimizar la Velocidad de Carga de tu Sitio Web</h3>
+                                <div class="articulo-meta">
+                                    <span class="fecha">10 de octubre, 2023</span>
+                                    <span class="tiempo-lectura">6 min de lectura</span>
+                                </div>
+                                <p class="articulo-extracto">Aprende técnicas efectivas para mejorar el rendimiento de tu sitio web y ofrecer una experiencia más rápida a tus usuarios.</p>
+                                <a href="#" class="leer-mas">Leer más</a>
+                            </div>
+                        </article>
+
+                        <article class="articulo">
+                            <div class="articulo-imagen">
+                                <div class="imagen-placeholder">
+                                    <!-- Aquí iría la imagen del artículo -->
+                                </div>
+                                <span class="etiqueta">SEO</span>
+                            </div>
+                            <div class="articulo-contenido">
+                                <h3>Estrategias de SEO Técnico para Mejorar tu Posicionamiento</h3>
+                                <div class="articulo-meta">
+                                    <span class="fecha">5 de octubre, 2023</span>
+                                    <span class="tiempo-lectura">7 min de lectura</span>
+                                </div>
+                                <p class="articulo-extracto">Descubre cómo implementar estrategias de SEO técnico que ayudarán a tu sitio web a posicionarse mejor en los motores de búsqueda.</p>
+                                <a href="#" class="leer-mas">Leer más</a>
+                            </div>
+                        </article>
+
+                        <article class="articulo">
+                            <div class="articulo-imagen">
+                                <div class="imagen-placeholder">
+                                    <!-- Aquí iría la imagen del artículo -->
+                                </div>
+                                <span class="etiqueta">E-commerce</span>
+                            </div>
+                            <div class="articulo-contenido">
+                                <h3>Claves para Crear una Tienda Online Exitosa en 2023</h3>
+                                <div class="articulo-meta">
+                                    <span class="fecha">28 de septiembre, 2023</span>
+                                    <span class="tiempo-lectura">9 min de lectura</span>
+                                </div>
+                                <p class="articulo-extracto">Conoce los elementos esenciales que debe tener tu tienda online para destacar en un mercado cada vez más competitivo.</p>
+                                <a href="#" class="leer-mas">Leer más</a>
+                            </div>
+                        </article>
+
+                        <article class="articulo">
+                            <div class="articulo-imagen">
+                                <div class="imagen-placeholder">
+                                    <!-- Aquí iría la imagen del artículo -->
+                                </div>
+                                <span class="etiqueta">Diseño UX</span>
+                            </div>
+                            <div class="articulo-contenido">
+                                <h3>Principios de UX Design que Todo Sitio Web Debería Seguir</h3>
+                                <div class="articulo-meta">
+                                    <span class="fecha">20 de septiembre, 2023</span>
+                                    <span class="tiempo-lectura">5 min de lectura</span>
+                                </div>
+                                <p class="articulo-extracto">Explora los principios fundamentales de diseño de experiencia de usuario que pueden transformar la usabilidad de tu sitio web.</p>
+                                <a href="#" class="leer-mas">Leer más</a>
+                            </div>
+                        </article>
+
+                        <article class="articulo">
+                            <div class="articulo-imagen">
+                                <div class="imagen-placeholder">
+                                    <!-- Aquí iría la imagen del artículo -->
+                                </div>
+                                <span class="etiqueta">Tecnología</span>
+                            </div>
+                            <div class="articulo-contenido">
+                                <h3>Las Mejores Herramientas para Desarrolladores Web en 2023</h3>
+                                <div class="articulo-meta">
+                                    <span class="fecha">15 de septiembre, 2023</span>
+                                    <span class="tiempo-lectura">8 min de lectura</span>
+                                </div>
+                                <p class="articulo-extracto">Descubre las herramientas más útiles y populares que están utilizando los desarrolladores web profesionales este año.</p>
+                                <a href="#" class="leer-mas">Leer más</a>
+                            </div>
+                        </article>
+
+                        <article class="articulo">
+                            <div class="articulo-imagen">
+                                <div class="imagen-placeholder">
+                                    <!-- Aquí iría la imagen del artículo -->
+                                </div>
+                                <span class="etiqueta">Consejos</span>
+                            </div>
+                            <div class="articulo-contenido">
+                                <h3>Cómo Elegir el Mejor Hosting para tu Proyecto Web</h3>
+                                <div class="articulo-meta">
+                                    <span class="fecha">8 de septiembre, 2023</span>
+                                    <span class="tiempo-lectura">6 min de lectura</span>
+                                </div>
+                                <p class="articulo-extracto">Guía completa para seleccionar el servicio de hosting más adecuado según las necesidades específicas de tu proyecto web.</p>
+                                <a href="#" class="leer-mas">Leer más</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="blog-sidebar">
+                        <div class="sidebar-widget categorias">
+                            <h3>Categorías</h3>
+                            <ul class="lista-categorias">
+                                <li><a href="#">Desarrollo Web <span>(12)</span></a></li>
+                                <li><a href="#">Diseño UX/UI <span>(8)</span></a></li>
+                                <li><a href="#">SEO <span>(6)</span></a></li>
+                                <li><a href="#">E-commerce <span>(5)</span></a></li>
+                                <li><a href="#">Tendencias <span>(4)</span></a></li>
+                                <li><a href="#">Tecnología <span>(7)</span></a></li>
+                                <li><a href="#">Consejos <span>(9)</span></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebar-widget populares">
+                            <h3>Artículos Populares</h3>
+                            <ul class="lista-populares">
+                                <li>
+                                    <a href="#">
+                                        <div class="mini-imagen">
+                                            <div class="imagen-placeholder"></div>
+                                        </div>
+                                        <div class="mini-contenido">
+                                            <h4>10 Errores Comunes en Diseño Web y Cómo Evitarlos</h4>
+                                            <span class="fecha">2 de octubre, 2023</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="mini-imagen">
+                                            <div class="imagen-placeholder"></div>
+                                        </div>
+                                        <div class="mini-contenido">
+                                            <h4>Guía Completa de WordPress para Principiantes</h4>
+                                            <span class="fecha">25 de septiembre, 2023</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="mini-imagen">
+                                            <div class="imagen-placeholder"></div>
+                                        </div>
+                                        <div class="mini-contenido">
+                                            <h4>Cómo Crear una Estrategia de Contenido Efectiva</h4>
+                                            <span class="fecha">18 de septiembre, 2023</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebar-widget newsletter">
+                            <h3>Suscríbete al Newsletter</h3>
+                            <p>Recibe los últimos artículos y novedades directamente en tu correo.</p>
+                            <form class="form-newsletter">
+                                <input type="email" placeholder="Tu correo electrónico" required>
+                                <button type="submit" class="btn btn-primario">Suscribirme</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="paginacion">
+                    <span class="pagina actual">1</span>
+                    <a href="#" class="pagina">2</a>
+                    <a href="#" class="pagina">3</a>
+                    <span class="separador">...</span>
+                    <a href="#" class="pagina">8</a>
+                    <a href="#" class="siguiente">Siguiente &raquo;</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Darwin Osorio</h3>
+                    <p>Desarrollador web profesional con más de 5 años de experiencia creando soluciones digitales para empresas en Guatemala.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Contacto</h3>
+                    <ul class="footer-contacto">
+                        <li><i class="icono-ubicacion"></i>Ciudad de Guatemala, Guatemala</li>
+                        <li><i class="icono-telefono"></i>+502 5555-5555</li>
+                        <li><i class="icono-email"></i>contacto@darwinosorio.com</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html#servicios">Servicios</a></li>
+                        <li><a href="index.html#portafolio">Portafolio</a></li>
+                        <li><a href="proceso-trabajo.html">Proceso</a></li>
+                        <li><a href="sobre-mi.html">Sobre Mí</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="index.html#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Sígueme</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="icono-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="icono-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="icono-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="icono-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Darwin Osorio. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

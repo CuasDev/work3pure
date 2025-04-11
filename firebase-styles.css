@@ -1,0 +1,77 @@
+/* Estilos para la integración con Firebase */
+
+/* Estilos para el botón de envío durante la carga */
+.boton:disabled {
+    background-color: var(--color-fondo-alt);
+    color: var(--color-texto);
+    opacity: 0.7;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* Animación de carga */
+.boton:disabled::after {
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin-left: 0.5rem;
+    border: 2px solid var(--color-texto-claro);
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Estilos para mensajes de éxito */
+.exito {
+    background-color: rgba(16, 185, 129, 0.1);
+    color: #065f46;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    border-radius: var(--borde-radio);
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Estilos para mensajes de error */
+.error {
+    color: #b91c1c;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    animation: fadeIn 0.3s ease-out;
+}
+
+.campo.error input,
+.campo.error textarea,
+.campo.error select {
+    border-color: #b91c1c;
+    background-color: rgba(239, 68, 68, 0.05);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Estilos para el modo oscuro */
+[data-theme="dark"] .exito {
+    background-color: rgba(16, 185, 129, 0.2);
+    color: #34d399;
+    border-color: rgba(16, 185, 129, 0.4);
+}
+
+[data-theme="dark"] .error {
+    color: #f87171;
+}
+
+[data-theme="dark"] .campo.error input,
+[data-theme="dark"] .campo.error textarea,
+[data-theme="dark"] .campo.error select {
+    border-color: #ef4444;
+    background-color: rgba(239, 68, 68, 0.1);
+}

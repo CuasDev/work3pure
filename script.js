@@ -106,18 +106,46 @@ if(form) {
         }
 
         if(isValid) {
-            // Simular envío exitoso
-            this.reset();
-            mostrarExito('¡Mensaje enviado con éxito! Me pondré en contacto contigo pronto.');
-            
-            // Para propósitos de depuración, mostrar los datos que se enviarían
-            console.log({
+            // Preparar los datos para enviar
+            const formData = {
                 nombre,
                 email,
                 telefono,
                 plan,
                 mensaje
-            });
+            };
+            
+            // Mostrar indicador de carga
+            const botonEnviar = form.querySelector('button[type="submit"]');
+            const textoOriginal = botonEnviar.textContent;
+            botonEnviar.textContent = 'Enviando...';
+            botonEnviar.disabled = true;
+            
+            // Importar la función de Firebase y enviar datos
+            import('./firebase-config.js')
+                .then(module => {
+                    return module.guardarMensaje(formData);
+                })
+                .then(data => {
+                    // Restaurar botón
+                    botonEnviar.textContent = textoOriginal;
+                    botonEnviar.disabled = false;
+                    
+                    if (data.success) {
+                        this.reset();
+                        mostrarExito('¡Mensaje enviado con éxito! Me pondré en contacto contigo pronto.');
+                    } else {
+                        mostrarError('mensaje', data.message || 'Error al enviar el mensaje');
+                    }
+                })
+                .catch(error => {
+                    // Restaurar botón
+                    botonEnviar.textContent = textoOriginal;
+                    botonEnviar.disabled = false;
+                    
+                    console.error('Error:', error);
+                    mostrarError('mensaje', 'Error de conexión al enviar el mensaje');
+                });
         }
     });
 }
@@ -141,5 +169,8 @@ function mostrarExito(mensaje) {
     exitoElemento.style.padding = '1rem';
     exitoElemento.style.borderRadius = '4px';
     exitoElemento.style.marginTop = '1rem';
-    form.parentElement.insertBefore(exitoElemento, form);
+    
+    // Insertar el mensaje después del botón de enviar
+    const botonEnviar = form.querySelector('button[type="submit"]');
+    botonEnviar.insertAdjacentElement('afterend', exitoElemento);
 }

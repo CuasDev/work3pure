@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="es-GT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes - Darwin Osorio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="firebase-styles.css">
+    <link rel="stylesheet" href="fab.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="logo">Darwin Osorio</a>
+            <ul class="nav-links">
+                <li><a href="index.html#servicios">Servicios</a></li>
+                <li><a href="index.html#portafolio">Portafolio</a></li>
+                <li><a href="proceso-trabajo.html">Proceso</a></li>
+                <li><a href="sobre-mi.html">Sobre Mí</a></li>
+                <li><a href="faq.html" class="active">FAQ</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+            <div class="nav-controls">
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" />
+                        <div class="slider">
+                            <span class="icon sun-icon">☀️</span>
+                            <span class="icon moon-icon">🌙</span>
+                        </div>
+                    </label>
+                </div>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="pagina-header faq-header">
+            <div class="contenedor">
+                <h1>Preguntas Frecuentes</h1>
+                <p class="subtitulo">Respuestas a las dudas más comunes sobre mis servicios</p>
+            </div>
+        </section>
+
+        <section class="seccion faq-contenido">
+            <div class="contenedor">
+                <div class="faq-intro">
+                    <p>He recopilado las preguntas más frecuentes que recibo de mis clientes. Si no encuentras respuesta a tu duda específica, no dudes en <a href="index.html#contacto">contactarme</a> directamente.</p>
+                </div>
+                
+                <div class="faq-categorias">
+                    <div class="faq-categoria">
+                        <h2>Servicios y Precios</h2>
+                        <div class="acordeon">
+                            <div class="acordeon-item">
+                                <div class="acordeon-header">
+                                    <h3>¿Qué servicios ofreces exactamente?</h3>
+                                    <span class="acordeon-icono"></span>
+                                </div>
+                                <div class="acordeon-contenido">
+                                    <p>Ofrezco una amplia gama de servicios de desarrollo web, que incluyen:</p>
+                                    <ul>
+                                        <li>Diseño y desarrollo de sitios web informativos</li>
+                                        <li>Creación de tiendas en línea (e-commerce)</li>
+                                        <li>Desarrollo de aplicaciones web personalizadas</li>
+                                        <li>Diseño y desarrollo de blogs</li>
+                                        <li>Mantenimiento y optimización de sitios web existentes</li>
+                                        <li>Consultoría técnica</li>
+                                    </ul>
+                                    <p>Puedes ver más detalles en la <a href="index.html#servicios">sección de servicios</a>.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="acordeon-item">
+                                <div class="acordeon-header">
+                                    <h3>¿Cómo determinas el precio de un proyecto?</h3>
+                                    <span class="acordeon-icono"></span>
+                                </div>
+                                <div class="acordeon-contenido">
+                                    <p>El precio de cada proyecto se determina en base a varios factores:</p>
+                                    <ul>
+                                        <li>Complejidad y alcance del proyecto</li>
+                                        <li>Número de páginas o funcionalidades requeridas</li>
+                                        <li>Tiempo estimado de desarrollo</li>
+                                        <li>Necesidades específicas de diseño</li>
+                                        <li>Integraciones con sistemas externos o APIs</li>
+                                    </ul>
+                                    <p>Cada proyecto recibe un presupuesto personalizado después de una consulta inicial donde analizamos tus necesidades específicas.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="acordeon-item">
+                                <div class="acordeon-header">
+                                    <h3>¿Ofreces descuentos o promociones?</h3>
+                                    <span class="acordeon-icono"></span>
+                                </div>
+                                <div class="acordeon-contenido">
+                                    <p>Sí, ocasionalmente ofrezco promociones especiales para clientes nuevos o para proyectos específicos. Actualmente tengo descuentos en algunos servicios que puedes ver en la sección de <a href="index.html#servicios">ofertas especiales</a>.</p>
+                                    <p>También ofrezco tarifas reducidas para organizaciones sin fines de lucro y startups en fase inicial.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="acordeon-item">
+                                <div class="acordeon-header">
+                                    <h3>¿Cuáles son tus formas de pago?</h3>
+                                    <span class="acordeon-icono"></span>
+                                </div>
+                                <div class="acordeon-contenido">
+                                    <p>Acepto diversas formas de pago para facilitar el proceso a mis clientes:</p>
+                                    <ul>
+                                        <li>Transferencia bancaria</li>
+                                        <li>Depósito bancario</li>
+                                        <li>PayPal</li>
+                                        <li>Tarjetas de crédito/débito</li>
+                                    </ul>
+                                    <p>Generalmente, el pago se estructura en tres partes: 40% al inicio del proyecto, 30% al aprobar el diseño, y 30% antes de la entrega final.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-categoria">
+                        <h2>Proceso de Trabajo</h2>
+                        <div class="acordeon">
+                            <div class="acordeon-item">
+                                <div class="acordeon-header">
+                                    <h3>¿Cuánto tiempo toma desarrollar un sitio web?</h3>
+                                    <span class="acordeon-icono"></span>
+                                </div>
+                                <div class="acordeon-contenido">
+                                    <p>El tiempo de desarrollo varía según la complejidad del proyecto:</p>
+                                    <ul>
+                                        <li>Sitio web informativo básico: 2-4 semanas</li>
+                                        <li>Sitio web corporativo completo: 4-8 semanas</li>
+                                        <li>Tienda en línea básica: 6-8 semanas</li>
+                                        <li>Tienda en línea avanzada: 8-12 semanas</li>
+                                        <li>Aplicación web personalizada: 8-16 semanas</li>
+                                    </ul>
+                                    <p>Estos plazos son estimados y pueden variar según la disponibilidad de contenido por parte del cliente y la complejidad específica del proyecto.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="acordeon-item">
+                                <div class="acordeon-header">
+                                    <h3>¿Cómo es el proceso de desarrollo?</h3>
+                                    <span class="acordeon-icono"></span>
+                                </div>
+                                <div class="acordeon-contenido">
+                                    <p>Mi proceso de desarrollo sigue estas etapas principales:</p>
+                                    <ol>
+                                        <li><strong>Descubrimiento y Planificación:</strong> Análisis de necesidades y definición de objetivos</li>
+                                        <li><strong>Diseño y Prototipado:</strong> Creación de wireframes y diseños visuales</li>
+                                        <li><strong>Desarrollo:</strong> Programación y construcción del sitio</li>
+                                        <li><strong>Pruebas:</strong> Control de calidad y corrección de errores</li>
+                                        <li><strong>Lanzamiento:</strong> Publicación del sitio</li>
+                                        <li><strong>Soporte:</strong> Mantenimiento continuo</li>
+                                    </ol>
+                                    <p>Puedes ver más detalles en la página de <a href="proceso-trabajo.html">Proceso de Trabajo</a>.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="acordeon-item">
+                                <div class="acordeon-header">
+                                    <h3>¿Qué necesitas de mí para comenzar un proyecto?</h3>
+                                    <span class="acordeon-icono"></span>
+                                </div>
+                                <div class="acordeon-contenido">
+                                    <p>Para iniciar un proyecto necesito:</p>
+                                    <ul>
+                                        <li>Una descripción clara de tus objetivos y necesidades</li>
+                                        <li>Ejemplos de sitios web que te gusten (para referencia de estilo)</li>
+                                        <li>Tu logotipo y guía de marca (si existe)</li>
+                                        <li>Contenido textual para el sitio (o indicar si necesitas ayuda con esto)</li>
+                                        <li>Imágenes de alta calidad (o indicar si necesitas ayuda con esto)</li>
+                                        <li>Un adelanto del 40% para comenzar el trabajo</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="acordeon-item">
+                                <div class="acordeon-header">
+                                    <h3>¿Cómo mantienes informado al cliente durante el desarrollo?</h3>
+                                    <span class="acordeon-icono"></span>
+                                </div>
+                                <div class="acordeon-contenido">
+                                    <p>Mantengo una comunicación constante con mis clientes durante todo el proceso:</p>
+                                    <ul>
+                                        <li>Reuniones semanales de seguimiento (presenciales o virtuales)</li>
+                                        <li>Informes de avance por correo electrónico</li>
+                                        <li>Acceso a una plataforma de gestión de proyectos donde puedes ver el progreso</li>
+                                        <li>Disponibilidad por WhatsApp para consultas rápidas</li>
+                                        <li>Presentaciones de avances en cada etapa clave del proyecto</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-categoria">
+                        <h2>Aspectos Técnicos</h2>
+                        <div class="acordeon">
+                            <div class="acordeon-item">
+                                <div class="acordeon-header">
+                                    <h3>¿Qué tecnologías utilizas para desarrollar sitios web?</h3>
+                                    <span class="acordeon-icono"></span>
+                                </div>
+                                <div class="acordeon-contenido">
+                                    <p>Utilizo diversas tecnologías modernas según las necesidades específicas de cada proyecto:</p>
+                                    <ul>
+                                        <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript, React.js, Vue.js</li>
+                                        <li><strong>Backend:</strong> Node.js, Express, PHP, Laravel</li>
+                                        <li><strong>Bases de datos:</strong> MySQL, MongoDB, Firebase</li>
+                                        <li><strong>CMS:</strong> WordPress, Shopify, sistemas personalizados</li>
+                                        <li><strong>Herramientas adicionales:</strong> Git, Webpack, Sass, Bootstrap, Tailwind CSS</li>
+                                    </ul>
+                                    <p>La elección de tecnologías se basa en los requerimientos específicos de tu proyecto para garantizar el mejor rendimiento y escalabilidad.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="acordeon-item">
+                                <div class="acordeon-header">
+                                    <h3>¿Los sitios web son responsivos/adaptables a móviles?</h3>
+                                    <span class="acordeon-icono"></span>
+                                </div>
+                                <div class="acordeon-contenido">
+                                    <p>¡Absolutamente! Todos los sitios web que desarrollo son 100% responsivos, lo que significa que se adaptan perfectamente a cualquier dispositivo (computadoras, tablets, smartphones).</p>
+                                    <p>Utilizo el enfoque de "mobile-first" en el diseño, asegurando que la experiencia sea óptima en dispositivos móviles, que representan la mayoría del tráfico web actual.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="acordeon-item">
+                                <div class="acordeon-header">
+                                    <h3>¿Incluyes optimización SEO en tus sitios web?</h3>
+                                    <span class="acordeon-icono"></span>
+                                </div>
+                                <div class="acordeon-contenido">
+                                    <p>Sí, todos mis sitios web incluyen optimización SEO técnica básica:</p>
+                                    <ul>
+                                        <li>Estructura de URL amigable para SEO</li>
+                                        <li>Meta títulos y descripciones optimizadas</li>
+                                        <li>Etiquetas de encabezado jerárquicas (H1, H2, H3...)</li>
+                                        <li>Optimización de imágenes (compresión y atributos alt)</li>
+                                        <li>Generación de sitemap XML</li>
+                                        <li>Velocidad de carga optimizada</li>
+                                    </ul>
+                                    <p>Para estrategias SEO más avanzadas (investigación de palabras clave, creación de contenido optimizado, link building), ofrezco servicios adicionales de SEO que se pueden contratar por separado.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="acordeon-item">
+                                <div class="acordeon-header">
+                                    <h3>¿Qué hosting recomiendas para los sitios web?</h3>
+                                    <span class="acordeon-icono"></span>
+                                </div>
+                                <div class="acordeon-contenido">
+                                    <p>Recomiendo diferentes opciones de hosting según las necesidades específicas de cada proyecto:</p>
+                                    <ul>
+                                        <li><strong>Para sitios pequeños:</strong> SiteGround, Hostinger</li>
+                                        <li><strong>Para sitios medianos:</strong> DigitalOcean, Cloudways</li>
+                                        <li><strong>Para sitios grandes o aplicaciones:</strong> AWS, Google Cloud</li>
+                                        <li><strong>Para e-commerce:</strong> Hostings especializados con certificados SSL y buena velocidad</li>
+                                    </ul>
+                                    <p>Puedo encargarme de la configuración del hosting y dominio como parte del servicio, o asesorarte sobre la mejor opción si ya cuentas con uno.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-categoria">
+                        <h2>Soporte y Mantenimiento</h2>
+                        <div class="acordeon">
+                            <div class="acordeon-item">
+                                <div class="acordeon-header">
+                                    <h3>¿Ofreces soporte técnico después de finalizar el proyecto?</h3>
+                                    <span class="acordeon-icono"></span>
+                                </div>
+                                <div class="acordeon-contenido">
+                                    <p>Sí, ofrezco soporte técnico después de la entrega del proyecto de dos maneras:</p>
+                                    <ul>
+                                        <li><strong>Soporte básico:</strong> Incluido gratuitamente durante el primer mes después del lanzamiento para resolver cualquier problema o duda.</li>
+                                        <li><strong>Planes de mantenimiento:</strong> Servicios mensuales o trimestrales que incluyen actualizaciones, copias de seguridad, monitoreo de seguridad y soporte técnico continuo.</li>
+                                    </ul>
+                                    <p>Puedes ver más detalles sobre los planes de mantenimiento en la <a href="index.html#servicios">sección de servicios</a>.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="acordeon-item">
+                                <div class="acordeon-header">
+                                    <h3>¿Puedo actualizar mi sitio web por mi cuenta?</h3>
+                                    <span class="acordeon-icono"></span>
+                                </div>
+                                <div class="acordeon-contenido">
+                                    <p>Sí, todos mis sitios web incluyen un panel de administración intuitivo que te permite actualizar el contenido por tu cuenta sin conocimientos técnicos.</p>
+                                    <p>Además, proporciono capacitación personalizada y documentación detallada sobre cómo realizar actualizaciones comunes como:</p>
+                                    <ul>
+                                        <li>Actualizar textos e imágenes</li>
+                                        <li>Añadir nuevos productos (en tiendas online)</li>
+                                        <li>Publicar entradas de blog</li>
+                                        <li>Gestionar formularios de contacto</li>
+                                    </ul>
+                                    <p>Para cambios más complejos que requieran modificaciones en el código, siempre puedes contar con mi asistencia profesional.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="acordeon-item">
+                                <div class="acordeon-header">
+                                    <h3>¿Qué incluyen los planes de mantenimiento?</h3>
+                                    <span class="acordeon-icono"></span>
+                                </div>
+                                <div class="acordeon-contenido">
+                                    <p>Mis planes de mantenimiento incluyen:</p>
+                                    <ul>
+                                        <li>Actualizaciones regulares de software y plugins</li>
+                                        <li>Copias de seguridad periódicas</li>
+                                        <li>Monitoreo de seguridad</li>
+                                        <li>Corrección de errores</li>
+                                        <li>Soporte técnico por correo electrónico</li>
+                                        <li>Pequeñas modificaciones de contenido</li>
+                                    </ul>
+                                    <p>Ofrezco diferentes niveles de planes según las necesidades específicas de cada cliente, desde mantenimiento básico hasta soporte premium con tiempo de respuesta garantizado.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion cta">
+            <div class="contenedor">
+                <div class="cta-contenido">
+                    <h2>¿Tienes más preguntas?</h2>
+                    <p>Si no has encontrado respuesta a tu pregunta, no dudes en contactarme directamente. Estaré encantado de ayudarte.</p>
+                    <a href="index.html#contacto" class="btn btn-primario">Contáctame</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Darwin Osorio</h3>
+                    <p>Desarrollador web profesional con más de 5 años de experiencia creando soluciones digitales para empresas en Guatemala.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Contacto</h3>
+                    <ul class="footer-contacto">
+                        <li><i class="icono-ubicacion"></i>Ciudad de Guatemala, Guatemala</li>
+                        <li><i class="icono-telefono"></i>+502 5555-5555</li>
+                        <li><i class="icono-email"></i>contacto@darwinosorio.com</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html#servicios">Servicios</a></li>
+                        <li><a href="index.html#portafolio">Portafolio</a></li>
+                        <li><a href="proceso-trabajo.html">Proceso</a></li>
+                        <li><a href="sobre-mi.html">Sobre Mí</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="index.html#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Sígueme</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="icono-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="icono-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="icono-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="icono-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Darwin Osorio. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Funcionalidad del acordeón para las preguntas frecuentes
+        document.addEventListener('DOMContentLoaded', function() {
+            const acordeonHeaders = document.querySelectorAll('.acordeon-header');
+            
+            acordeonHeaders.forEach(header => {
+                header.addEventListener('click', function() {
+                    this.parentElement.classList.toggle('activo');
+                    
+                    // Cerrar otros items del acordeón (opcional)
+                    const otrosItems = document.querySelectorAll('.acordeon-item');
+                    otrosItems.forEach(item => {
+                        if (item !== this.parentElement && item.classList.contains('activo')) {
+                            item.classList.remove('activo');
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Contacto</h3>
+                    <ul class="footer-info">
+                        <li><i class="icono-ubicacion"></i>Ciudad de Guatemala, Guatemala</li>
+                        <li><i class="icono-telefono"></i>+502 5555-5555</li>
+                        <li><i class="icono-email"></i>contacto@darwinosorio.com</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html#servicios">Servicios</a></li>
+                        <li><a href="index.html#portafolio">Portafolio</a></li>
+                        <li><a href="proceso-trabajo.html">Proceso</a></li>
+                        <li><a href="sobre-mi.html">Sobre Mí</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="index.html#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Sígueme</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="icono-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="icono-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="icono-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="icono-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Darwin Osorio. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
